@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "cabecalho cabecalho"
+        "menu conteudo"
+        "rodape rodape";
+    grid-template-columns: 1fr 4fr;
+}
+
+/* ===== CABEÇALHO ===== */
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #575f6c;
+    border-bottom: 1px solid black;
+}
+
+.cabecalho header,
+.logotipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo {
+    margin: 20px;
+}
+
+.cabecalho img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header h1 {
+    color: white;
+}
+
+/* ===== MENU E LINKS ===== */
+
+.menu {
+    grid-area: menu;
+    border-right: 1px solid black;
+    padding: 20px;
+}
+
+.links {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.menu ul,
+.links ul {
+    list-style-type: none;
+}
+
+.menu li {
+    text-align: center;
+    width: 200px;
+    padding: 15px 0;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu li a,
+.links li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2e86c1;
+}
+
+.menu li:hover,
+.menu li.ativo,
+.links li:hover,
+.links li.ativo {
+    font-weight: bold;
+}
+
+.menu li.ativo,
+.links li.ativo {
+    text-decoration: underline;
+    color: #2e86c1;
+}
+
+/* ===== CONTEÚDO PRINCIPAL DA PÁGINA ===== */
+
+.conteudo {
+    grid-area: conteudo;
+}
+
+.conteudo,
+.login {
+    padding: 20px;
+}
+
+.conteudo h1,
+.login h1,
+iframe,
+audio {
+    margin-bottom: 20px;
+}
+
+.catalogo,
+.filme,
+figure {
+    display: flex;
+}
+
+.catalogo {
+    flex-wrap: wrap;
+}
+
+.filme,
+figure {
+    align-items: center;
+}
+
+.filme {
+    justify-content: center;
+}
+
+figure {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 250px;
+}
+
+figure:hover {
+    border: 1px solid black;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    height: 15%;
+}
+
+.descricao-filme p {
+    text-align: left;
+    font-size: 20px;
+    margin: 15px;
+}
+
+/* ===== RODAPÉ ===== */
+
+.rodape {
+    grid-area: rodape;
+    border-top: 1px solid black;
+}
+
+/* ===== FORMULÁRIOS ===== */
+
+form,
+fieldset {
+    margin-bottom: 25px;
+}
+
+fieldset {
+    padding: 15px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 15px 10px;
+}
+
+.botoes,
+h1,
+p {
+    text-align: center;
+}
+
+.botao {
+    border: 1px solid black;
+    box-shadow: 2px 2px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ===== PÁGINA SOBRE ===== */
+
+.sobre {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.sobre>div {
+    font-size: 20px;
+    text-align: center;
+}

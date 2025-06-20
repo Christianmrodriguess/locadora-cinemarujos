@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro de Usuários </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <header>
+            <img src="img/logotipo.png" alt="Logotipo Cine Marujos" width="125px" height="125px">
+            <h1> Cine Marujos </h1>
+        </header>
+    </div>
+    <div class="login">
+        <h1> Cadastro de Usuários </h1>
+
+        <form>
+            <fieldset>
+
+                <label for="nome"> Nome: </label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email">
+
+                <label for="endereco"> Endereço: </label>
+                <input type="text" id="endereco" name="endereco">
+
+                <label for="cidade"> Cidade: </label>
+                <input type="text" id="cidade" name="cidade">
+
+                <label for="estados"> Estado: </label>
+                <select name="estados" id="estados">
+                    <option value="Acre"> Acre </option>
+                    <option value="Alagoas"> Alagoas </option>
+                    <option value="Amapá"> Amapá </option>
+                    <option value="Amazonas"> Amazonas </option>
+                    <option value="Bahia"> Bahia </option>
+                    <option value="Ceará"> Ceará </option>
+                    <option value="Distrito Federal"> Distrito Federal </option>
+                    <option value="Espírito Santo"> Espírito Santo </option>
+                    <option value="Goiás"> Goiás </option>
+                    <option value="Maranhão"> Maranhão </option>
+                    <option value="Mato Grosso"> Mato Grosso </option>
+                    <option value="Mato Grosso do Sul"> Mato Grosso do Sul </option>
+                    <option value="Minas Gerais"> Minas Gerais </option>
+                    <option value="Pará"> Pará </option>
+                    <option value="Paraíba"> Paraíba </option>
+                    <option value="Paraná"> Paraná </option>
+                    <option value="Pernambuco"> Pernambuco </option>
+                    <option value="Piauí"> Piauí </option>
+                    <option value="Rio de Janeiro"> Rio de Janeiro </option>
+                    <option value="Rio Grande do Norte"> Rio Grande do Norte </option>
+                    <option value="Rio Grande do Sul"> Rio Grande do Sul </option>
+                    <option value="Rondônia"> Rondônia </option>
+                    <option value="Roraima"> Roraima </option>
+                    <option value="Santa Catarina"> Santa Catarina </option>
+                    <option value="São Paulo"> São Paulo </option>
+                    <option value="Sergipe"> Sergipe </option>
+                    <option value="Tocantins"> Tocantins </option>
+                </select>
+
+                <label for="sexo"> Sexo: </label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino"> Masculino </label>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino"> Feminino </label>
+
+                <fieldset>
+                    <legend> Escolha os filmes que você mais gosta </legend>
+
+                    <div>
+                        <input type="checkbox" id="acao" name="filmes" value="acao">
+                        <label for="acao"> Ação </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="aventura" name="filmes" value="aventura">
+                        <label for="aventura"> Aventura </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="comedia" name="filmes" value="comedia">
+                        <label for="comedia"> Comédia </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="suspense" name="filmes" value="suspense">
+                        <label for="suspense"> Suspense </label>
+
+                    </div>
+                    <div>
+                        <input type="checkbox" id="drama" name="filmes" value="drama">
+                        <label for="drama"> Drama </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="romance" name="filmes" value="romance">
+                        <label for="romance"> Romance </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="terror" name="filmes" value="terror">
+                        <label for="terror"> Terror </label>
+                    </div>
+
+                </fieldset>
+
+                <label for="usuario"> Usuário: </label>
+                <input type="text" id="usuario" name="usuario">
+
+                <label for="senha"> Senha: </label>
+                <input type="text" id="senha" name="senha">
+
+            </fieldset>
+
+            <div class="botoes">
+                <input type="submit" value="Cancelar" class="botao">
+                <input type="reset" value="Limpar" class="botao">
+                <input type="submit" value="Cadastrar" class="botao">
+            </div>
+
+        </form>
+
+        <div class="links">
+            <ul>
+                <li> <a href="index.html"> Voltar </a> </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="rodape">
+        <footer>
+            <p>
+                © Christian e Pedro - Instituto Federal do Sul de Minas Gerais - 2025
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
